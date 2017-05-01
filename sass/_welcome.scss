@@ -1,0 +1,7 @@
+img.welcome{
+  max-width: 80%;
+  box-shadow: 0 0 40px rgba($secondary, .2);
+  @media (min-width: $tablet){
+    max-width: 30%;
+  }
+}

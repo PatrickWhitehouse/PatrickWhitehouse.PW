@@ -1,0 +1,54 @@
+// Fonts & Global stuff
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body{
+  font-family: $body;
+  color: $primary;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $headings;
+  margin: .8rem 0;
+}
+p{
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.8rem;
+}
+h3{
+  font-size:1.5rem;
+}
+
+a, a:link, a:active, a:visited{
+  text-decoration: none;
+  font-family: $body;
+  color:$primary;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+a::after{
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: $secondary;
+  transition: all .2s;
+  z-index: -1;
+}
+
+a:hover::after{
+  height: 50%;
+  transition: all .2s;
+}

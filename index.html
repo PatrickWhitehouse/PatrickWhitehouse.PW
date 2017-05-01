@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Patrick Whitehouse — Graduate web developer, based in Manchester </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Welcome -->
+
+<div class="wrapper">
+  <img src="img/avatar.png" alt="" class="welcome">
+  <h1>Patrick Whitehouse</h1>
+  <p>Hey there 😄! I'm Patrick. I'm a recent graduate of <a href="http://www.mmu.ac.uk">Manchester Metropolitan University</a>, where I studied BSc Web Development.</p>
+</div>
+
+<!-- Work -->
+<div class="wrapper" id="work">
+  <h2>Check out my latest projects👩🏼‍🚀</h2>
+  <div class="project">
+    <div class="project--context">
+      <h3 class="project--heading">CSS Grid</h3>
+      <p class="project--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod pariatur aut sed et porro similique, ipsam magnam expedita autem vitae dolor facere neque perspiciatis quas atque voluptas fugit mollitia?</p>
+      <a href="#" class="project--link">View Project</a>
+    </div>
+    <div class="project--image">
+      <img data-src="img/css-grid.png" alt="" class="project--image__screenshot">
+    </div>
+  </div>
+  <div class="project">
+    <div class="project--context">
+      <h3 class="project--heading">Maid About Town</h3>
+      <p class="project--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod pariatur aut sed et porro similique, ipsam magnam expedita autem vitae dolor facere neque perspiciatis quas atque voluptas fugit mollitia?</p>
+      <a href="#" class="project--link">View Project</a>
+    </div>
+    <div class="project--image">
+      <img data-src="img/final-project.png" alt="Final year project screenshot" class="project--image__screenshot">
+    </div>
+  </div>
+  <div class="project">
+    <div class="project--context">
+      <h3 class="project--heading">MMU Library App</h3>
+      <p class="project--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod pariatur aut sed et porro similique, ipsam magnam expedita autem vitae dolor facere neque perspiciatis quas atque voluptas fugit mollitia?</p>
+      <a href="#" class="project--link">View Project</a>
+    </div>
+    <div class="project--image">
+      <img data-src="img/mmu-app.png" alt="MMU Library app screenshot" class="project--image__screenshot">
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts -->
+<script   src="https://code.jquery.com/jquery-3.2.1.slim.js"   integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="   crossorigin="anonymous"></script>
+<script src="js/lazy.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("img.project--image__screenshot").unveil(200, function() {
+  	      $(this).on('load', function() {
+  	        this.style.opacity = 1;
+  	      });
+  	  });
+  });
+</script>
+</body>
+</html>

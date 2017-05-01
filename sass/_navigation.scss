@@ -1,0 +1,25 @@
+// Nav
+
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media (min-width: $tablet){
+    justify-content: flex-end;
+  }
+}
+
+
+nav ul{
+  margin-top: 2rem;
+  margin-bottom: 1mrem;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline;
+  margin-right: .8rem;
+  @media (min-width: $tablet){
+    margin-right: 2rem;
+  }
+}
