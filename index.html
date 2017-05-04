@@ -11,7 +11,7 @@
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Patrick Whitehouse">
 <meta property="og:url" content="patrickwhitehouse.pw">
-<meta property="og:image" content="https://scontent.xx.fbcdn.net/v/t1.0-9/12494682_10208810943017908_4962912354904470278_n.jpg?oh=7083ad6d089000347dd5f703a5353077&oe=5976B90B">
+<meta property="og:image" content="http://scontent.xx.fbcdn.net/v/t1.0-9/12494682_10208810943017908_4962912354904470278_n.jpg?oh=7083ad6d089000347dd5f703a5353077&oe=5976B90B">
 <meta property="profile:first_name" content="Patrick">
 <meta property="profile:last_name" content="Whitehouse">
 <meta name="twitter:card" content="summary">
@@ -35,8 +35,7 @@
 <!-- Nav -->
 <nav>
   <ul>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Say hi 😌</a></li>
   </ul>
 </nav>
 
@@ -49,7 +48,7 @@
 </div>
 
 <!-- Work -->
-<div class="wrapper" id="work">
+<div class="wrapper">
   <h2>Check out my latest projects👩🏼‍🚀</h2>
   <div class="project">
     <div class="project--context">
@@ -85,7 +84,8 @@
 
 <!-- Contact -->
 
-<div class="wrapper">
+<div class="wrapper contact">
+  <span class="contact__exit">Exit</span>
   <h2>Get in touch 📩</h2>
   <form action="#">
     <label for="name">Name:</label>
@@ -119,6 +119,16 @@
     setTimeout(function(){
       body.removeClass('noscroll');
     }, 4500);
+  });
+
+  $('a[href="#contact"]').click(function(){
+    $('.contact').addClass('contact--display');
+    $('body').addClass('noscroll');
+  });
+
+  $('span.contact__exit').click(function(){
+    $('.contact').removeClass('contact--display');
+    $('body').removeClass('noscroll');
   });
 </script>
 </body>
