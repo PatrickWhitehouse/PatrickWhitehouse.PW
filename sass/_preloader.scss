@@ -1,0 +1,43 @@
+.preloader{
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader__img{
+  width: 50%;
+  fill: none;
+  stroke-dasharray: 2600px;
+  stroke-dashoffset: 2600px;
+  stroke: $primary;
+  animation: strokeMe 2s forwards .5s,
+  fillMe 3s forwards;
+}
+
+@keyframes strokeMe {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillMe {
+  70%{
+    fill: rgba($primary, 0);
+  }
+  100%{
+    fill: rgba($primary, 1);
+  }
+}
+
+.noscroll{
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+}
