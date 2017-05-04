@@ -269,7 +269,8 @@ textarea {
       width: 50%; } }
 
 input[type=submit] {
-  background-color: transparent; }
+  background-color: transparent;
+  font-weight: bold; }
   input[type=submit]:hover {
     transform: scale(1.02);
     cursor: pointer;

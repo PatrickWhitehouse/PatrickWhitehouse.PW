@@ -49,6 +49,7 @@ textarea{
 
 input[type=submit]{
   background-color: transparent;
+  font-weight: bold;
   &:hover{
     transform: scale(1.02);
     cursor: pointer;
