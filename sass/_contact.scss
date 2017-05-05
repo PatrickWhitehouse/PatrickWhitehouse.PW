@@ -44,7 +44,7 @@ form input{
   margin: 1rem 0;
   padding: 1rem .5rem;
   font-size: inherit;
-  font-family: inherit;
+  font-family: $body;
   border:1px solid $secondary;
   color: $secondary;
   transition: ease .4s all;
@@ -71,7 +71,7 @@ textarea{
   margin: 1rem 0;
   border:1px solid $secondary;
   font-size: inherit;
-  font-family: inherit;
+  font-family: $body;
   color: $secondary;
   transition: ease .4s all;
   border-radius: 0;

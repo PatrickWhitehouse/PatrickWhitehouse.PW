@@ -262,7 +262,7 @@ form input {
   margin: 1rem 0;
   padding: 1rem .5rem;
   font-size: inherit;
-  font-family: inherit;
+  font-family: Inconsolata, monospace;
   border: 1px solid #ff3d3f;
   color: #ff3d3f;
   transition: ease .4s all;
@@ -284,7 +284,7 @@ textarea {
   margin: 1rem 0;
   border: 1px solid #ff3d3f;
   font-size: inherit;
-  font-family: inherit;
+  font-family: Inconsolata, monospace;
   color: #ff3d3f;
   transition: ease .4s all;
   border-radius: 0; }
