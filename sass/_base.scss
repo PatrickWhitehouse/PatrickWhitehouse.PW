@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,h6{
 p{
   line-height: 1.5;
   font-size: 1rem;
+  word-wrap: break-word;
 }
 
 h1{
@@ -53,4 +54,17 @@ a::after{
 a:hover::after{
   height: 50%;
   transition: all .2s;
+}
+
+
+// Noscript
+.noscript{
+  width: 100%;
+  height: 4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  color: white;
 }
